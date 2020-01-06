@@ -1,0 +1,33 @@
+{
+  "name": "sms_challenge",
+  "version": "1.0.0",
+  "description": "challenge for fullstack developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielpiyo/smsAfricastaking.git"
+  },
+  "keywords": [
+    "sms_node",
+    "js"
+  ],
+  "author": "daniel opiyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielpiyo/smsAfricastaking/issues"
+  },
+  "homepage": "https://github.com/danielpiyo/smsAfricastaking#readme",
+  "dependencies": {
+    "africastalking": "^0.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  }
+}
