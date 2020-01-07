@@ -16,15 +16,16 @@ sms = africasTalking.SMS
 
 // Use the service
 router.post('/send', function(req, res){
-    var dataTosend = {
+    var dataTosend = {        
         to: req.body.to,
-        message: req.body.message
+        message: `Hello ${req.body.fname}, ${req.body.message}`
     }
     
     // Send message and capture the response or error
     sms.send(dataTosend)
         .then( response => {
             console.log(response);
+            console.log(`+++++++++++++++++++++++++++++++++EveryThing works well so far++++++++++++++++++++++++++++++++++++++`)
             return res.contentType('application/json').status(201).send(JSON.stringify(response));
         })
         .catch( error => {
